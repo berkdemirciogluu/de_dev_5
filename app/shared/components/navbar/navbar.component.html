@@ -1,0 +1,135 @@
+<nav
+  class="navbar navbar-expand-custom navbar-mainbg fixed-top"
+  *ngIf="!isSmallWidth"
+>
+  <div style="height: 100%; width: 6rem; margin-left: 2rem; border-radius: 50%">
+    <img src="../../../../assets/images/logo61.png" />
+  </div>
+  <a
+    class="navbar-brand navbar-logo"
+    style="cursor: pointer; font-size: 1.8rem"
+    >{{ "company_name" | translate }}</a
+  >
+  <div
+    class="collapse navbar-collapse d-flex justify-content-end"
+    id="navbarSupportedContent"
+  >
+    <ul class="navbar-nav ml-auto">
+      <div class="hori-selector"></div>
+      <li class="nav-item active" (click)="onCLick()">
+        <a class="nav-link" [routerLink]="''" id="home">{{
+          "Home" | translate | uppercase
+        }}</a>
+      </li>
+      <li class="nav-item" (click)="onCLick()">
+        <a class="nav-link" [routerLink]="'/aboutus'" id="aboutus">{{
+          "About Us" | translate | uppercase
+        }}</a>
+      </li>
+      <li class="nav-item" (click)="onCLick()">
+        <a class="nav-link" [routerLink]="'/services'" id="services">{{
+          "Services" | translate | uppercase
+        }}</a>
+      </li>
+      <li class="nav-item" (click)="onCLick()">
+        <a class="nav-link" [routerLink]="'/contactus'" id="contactus">{{
+          "Contact" | translate | uppercase
+        }}</a>
+      </li>
+      <div class="language" *ngIf="selectedLanguage != 'en'">
+        <button
+          (click)="changeLanguage('en')"
+          style="background-color: #23272a; border: #23272a"
+        >
+          <img src="../../../../assets/images/en.png" />
+          <span style="color: aliceblue">EN</span>
+        </button>
+      </div>
+      <div class="language" *ngIf="selectedLanguage != 'ru'">
+        <button
+          (click)="changeLanguage('ru')"
+          style="background-color: #23272a; border: #23272a"
+        >
+          <img src="../../../../assets/images/ru.png" />
+          <span style="color: aliceblue">RU</span>
+        </button>
+      </div>
+    </ul>
+  </div>
+</nav>
+
+<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+  <div
+    class="collapse navbar-collapse d-flex justify-content-end"
+    id="navbarSupportedContent"
+    style="background-color: #23272a"
+    (click)="onCLick()"
+  >
+    <ul class="navbar-nav ml-auto">
+      <div class="hori-selector">
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="''" id="home">{{
+          "Home" | translate | uppercase
+        }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/aboutus'" id="aboutus">{{
+          "About Us" | translate | uppercase
+        }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/services'" id="services">{{
+          "Services" | translate | uppercase
+        }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/contactus'" id="contactus">{{
+          "Contact" | translate | uppercase
+        }}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-dark" *ngIf="isSmallWidth">
+  <div class="container-fluid d-flex justify-content-around">
+    <div style="height: 100%; width: 6rem; border-radius: 50%">
+      <img src="../../../../assets/images/logo61.png" />
+    </div>
+    <a class="navbar-brand navbar-logo" style="cursor: pointer"
+      >DOGANLAR AYNASY</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarToggleExternalContent"
+      aria-controls="navbarToggleExternalContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="onToggleClick()"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="language" *ngIf="selectedLanguage != 'en'">
+      <button
+        (click)="changeLanguage('en')"
+        style="background-color: #23272a; border: #23272a"
+      >
+        <img src="../../../../assets/images/en.png" />
+        EN
+      </button>
+    </div>
+    <div class="language" *ngIf="selectedLanguage != 'ru'">
+      <button
+        (click)="changeLanguage('ru')"
+        style="background-color: #23272a; border: #23272a"
+      >
+        <img src="../../../../assets/images/ru.png" />
+        RU
+      </button>
+    </div>
+  </div>
+</nav>

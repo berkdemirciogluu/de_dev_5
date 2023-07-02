@@ -1,0 +1,20 @@
+<video
+  class="container-fluid"
+  [muted]="'muted'"
+  loop
+  autoplay
+  src="../../../assets/videos/1920_900.mp4"
+  style="margin-top: 6rem"
+  *ngIf="!is820"
+></video>
+
+<video
+  class="container-fluid"
+  [muted]="'muted'"
+  loop
+  autoplay
+  src="../../../assets/videos/820_461.mp4"
+  *ngIf="is820"
+></video>
+<app-about-us></app-about-us>
+<app-services-option1></app-services-option1>

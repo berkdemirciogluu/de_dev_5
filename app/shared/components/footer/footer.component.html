@@ -1,0 +1,118 @@
+<footer class="main-footer" style="font-size: 1.4rem">
+  <div class="container">
+    <div class="footer-content">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 footer-column mt-3">
+          <div
+            class="logo-widget footer-widget"
+            style="text-align: -webkit-center"
+          >
+            <figure class="logo-box">
+              <a><img src="../../../../assets/images/logo.png" /></a>
+            </figure>
+            <div class="text container-fluid">
+              <p>
+                {{ "aboutus_parap_1" | translate }}
+              </p>
+            </div>
+            <ul class="footer-social" (click)="onCLickLi()">
+              <li [routerLink]="''">
+                <a><i class="bi bi-house-door"></i></a>
+              </li>
+              <li [routerLink]="'/aboutus'">
+                <a><i class="bi bi-info-circle"></i></a>
+              </li>
+              <li [routerLink]="'/services'">
+                <a><i class="bi bi-tools"></i></a>
+              </li>
+              <li [routerLink]="'/contactus'">
+                <a><i class="bi bi-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-12 footer-column d-flex justify-content-center mt-3"
+        >
+          <div class="service-widget footer-widget w-50 text-center">
+            <div class="footer-title">{{ "Services" | translate }}</div>
+            <ul class="list">
+              <li>
+                <a id="tubularRunServiceModal" (click)="onClick($event)"
+                  >{{ "Tubular run service" | translate }}
+                </a>
+              </li>
+              <li>
+                <a id="snubbingUnitModal" (click)="onClick($event)">{{
+                  "Snubbing unit and Coil tubing" | translate
+                }}</a>
+              </li>
+              <li>
+                <a id="completionsModal" (click)="onClick($event)">{{
+                  "Completions and Liner Tools – ESP technology -Dual Completion"
+                    | translate
+                }}</a>
+              </li>
+              <li>
+                <a id="geomodellingModal" (click)="onClick($event)">{{
+                  "Geomodelling of reservoirs" | translate
+                }}</a>
+              </li>
+              <li>
+                <a id="torqueModal" (click)="onClick($event)">{{
+                  "Torque and drug and Tubular design analysis" | translate
+                }}</a>
+              </li>
+              <li>
+                <a>{{
+                  "Hydraulic pumps spare parts supplement" | translate
+                }}</a>
+              </li>
+              <li>
+                <a>{{
+                  "Technical evaluation of Completion design as Third Company"
+                    | translate
+                }}</a>
+              </li>
+              <li>
+                <a>{{ "Torque units calibration device" | translate }} </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-12 footer-widget d-flex justify-content-center mt-3"
+        >
+          <div
+            class="contact-widget footer-widget w-50 text-center"
+            style="z-index: 1"
+          >
+            <div class="footer-title">{{ "Contact" | translate }}</div>
+            <div class="text">
+              <p>
+                {{ "address_desc" | translate }}
+              </p>
+              <p>
+                +99-364-235-414 / <br />
+                +90 535 218 84 44
+              </p>
+              <p>aynasb@mail.ru / <br />john.h.thomson@hotmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 column d-flex justify-content-center">
+        <div class="copyright">
+          <a>{{ "company_name" | translate }}</a> &copy; 2023
+          {{ "All Rights Reserved" | translate }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

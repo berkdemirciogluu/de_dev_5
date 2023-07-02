@@ -1,0 +1,45 @@
+<div class="main-container">
+  <canvas id="canvas0" class="container-fluid" #canvas0></canvas>
+  <canvas id="canvas1" class="container-fluid" #canvas1></canvas>
+  <canvas id="canvas2" class="container-fluid" #canvas2></canvas>
+  <canvas id="canvas3" class="container-fluid" #canvas3></canvas>
+  <nav class="link-list">
+    <ul>
+      <li>
+        <a
+          data-order="1"
+          data-imagesrc="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/leopard2.jpg"
+        ></a>
+      </li>
+      <li>
+        <a
+          data-order="2"
+          data-imagesrc="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/lion2.jpg"
+        ></a>
+      </li>
+      <li>
+        <a
+          data-order="3"
+          data-imagesrc="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/tiger2.jpg"
+        ></a>
+      </li>
+      <li>
+        <a
+          data-order="4"
+          data-imagesrc="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/bear2.jpg"
+        ></a>
+      </li>
+    </ul>
+  </nav>
+  <nav
+    class="btns d-flex justify-content-around align-items-center position-absolute top-50"
+  >
+    <button class="show-prev" (click)="onBtnsClick($event)">
+      <span>PREV</span>
+    </button>
+    <button class="show-next" (click)="onBtnsClick($event)">
+      <span>NEXT</span>
+    </button>
+  </nav>
+  <p class="loading-txt">Loading images...</p>
+</div>
